@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Cards from '../components/Cards';
+import Footer from '../components/Footer';
 
 export const projects = [
   {
@@ -46,6 +47,8 @@ function Home() {
     ))}
   </div>
 </section>
+
+<Footer />
 
 
       {/* You can add more sections below like: About, Contact, Footer etc. */}

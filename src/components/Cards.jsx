@@ -2,7 +2,7 @@ import React from 'react';
 
 function Cards({ project }) {
   return (
-    <div className="card w-96 bg-gray-900 text-white shadow-md hover:shadow-sky-500/50 transition-transform hover:scale-105 duration-300 border border-gray-700 hover:border-sky-400">
+    <div className="card w-96 bg-gray-900 text-white shadow-md hover:shadow-sky-500/50 transition-transform hover:scale-105 duration-300 border border-orange-300 hover:border-[#FF914C]">
       
       {/* Top Image */}
       <figure>
@@ -21,20 +21,23 @@ function Cards({ project }) {
         {/* Tech Tags */}
         <div className="flex flex-wrap gap-2 mt-2">
           {project.tech.map((tech, idx) => (
-            <span key={idx} className="badge bg-sky-700 text-white">{tech}</span>
+            <span key={idx} className="badge bg-[#FF914C] text-white">{tech}</span>
           ))}
         </div>
 
         {/* Action Buttons */}
         <div className="card-actions justify-end mt-4">
         <a href={project.link} >
-          <button   className="btn btn-primary btn-sm">View Project</button>
+        <button className="btn btn-sm text-white border border-transparent hover:border-[#FF914C] hover:text-[#FF914C] bg-[#FF914C] hover:bg-transparent transition-all duration-300">
+  View Project
+</button>
+
           </a>
           <a
             href={project.infolink} // Dynamic link
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-outline btn-sm border-sky-500 text-sky-400 hover:bg-sky-600 hover:text-white"
+            className="btn btn-outline btn-sm border-[#FF914C]  text-[#FF914C]  hover:bg-[#ffb44c]  hover:text-white"
           >
             More Info
           </a>
