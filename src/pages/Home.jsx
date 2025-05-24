@@ -6,15 +6,17 @@ import Footer from '../components/Footer';
 
 export const projects = [
   {
+    id: 1,
     title: 'ICT Panthiya',
     description: 'ICT Panthiya is android app that helps students to learn ICT.',
     tech: ['Flutter', 'Firebase'],
     status: 'In Progress',
     imageUrl: '/ictclass.png',
     link: 'https://mypetdoctor.kcodz.com',
-    infolink:""
+    infolink:"projectinfo/1"
   },
   {
+    id: 2,
     title: 'AiPazz',
     description: 'Aipazz is the platform that serve all the services lawyer need',
     tech: ['React', 'ASP.NET', 'Azure','Tailwind'],
@@ -29,7 +31,7 @@ function Home() {
   return (
     <>
       {/* Navbar */}
-      <Navbar />
+      
 
       {/* Hero / Landing */}
       <section id="hero" className="min-h-screen">
