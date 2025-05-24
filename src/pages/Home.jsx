@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Cards from '../components/Cards';
 import Footer from '../components/Footer';
+import ContactUs from './Contactus';
 
 export const projects = [
   {
@@ -12,7 +13,7 @@ export const projects = [
     tech: ['Flutter', 'Firebase'],
     status: 'In Progress',
     imageUrl: '/ictclass.png',
-    link: 'https://mypetdoctor.kcodz.com',
+    link: 'https://play.google.com/store/apps/details?id=com.kcodz.ictpanthiya',
     infolink:"projectinfo/1"
   },
   {
@@ -23,6 +24,16 @@ export const projects = [
     status: 'Deployed',
     imageUrl: '/aipazz.webp',
     link: 'https://aipazz-hpdeeff5aedva6f2.canadacentral-01.azurewebsites.net/',
+    infolink:""
+  },
+  {
+    id: 3,
+    title: 'Billora',
+    description: 'Offline Invoice Generator App',
+    tech: ['Flutter', 'SQLite'],
+    status: 'Deployed',
+    imageUrl: '/Billora.png',
+    link: '',
     infolink:""
   },
 ];
@@ -48,6 +59,10 @@ function Home() {
       <Cards key={idx} project={project} />
     ))}
   </div>
+</section>
+
+<section id="contact_us">
+  <ContactUs />
 </section>
 
 <Footer />
